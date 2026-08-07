@@ -1,4 +1,4 @@
-# Project Polaris
+# Polaris Design System
 
 > Typography System
 
@@ -55,7 +55,7 @@ Why
 
 IBM Plex Sans was designed to bridge engineering precision with human warmth.
 
-It reflects the philosophy of Project Polaris.
+It reflects the philosophy of Polaris Design System.
 
 ---
 
@@ -85,7 +85,7 @@ Never use monospace for paragraphs.
 
 # Type Scale
 
-Project Polaris follows a modular scale.
+Polaris Design System follows a modular scale.
 
 | Token | Size | Weight | Usage |
 |-------|------:|--------:|-----------------------------|
