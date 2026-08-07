@@ -1,4 +1,4 @@
-# Project Polaris
+# Polaris Design System
 
 > Color System
 
@@ -12,7 +12,7 @@ Colors should communicate purpose.
 
 They should never exist only for decoration.
 
-Every color in Project Polaris has a clear role, making interfaces easier to understand rather than more visually complex.
+Every color in Polaris Design System has a clear role, making interfaces easier to understand rather than more visually complex.
 
 The palette is intentionally minimal.
 
@@ -344,4 +344,4 @@ the more important the content becomes.
 
 A calm interface communicates confidence.
 
-Project Polaris uses color to support information—not distract from it.
+Polaris Design System uses color to support information—not distract from it.
