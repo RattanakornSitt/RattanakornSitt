@@ -1,4 +1,4 @@
-# Project Polaris
+# Polaris Design System
 
 > Design System Principles
 
@@ -8,7 +8,7 @@ Version 1.0
 
 # Purpose
 
-Project Polaris is a personal design system created to ensure consistency across every engineering artifact—from GitHub profiles and SVG illustrations to portfolio websites and future products.
+Polaris Design System is a personal design system created to ensure consistency across every engineering artifact—from GitHub profiles and SVG illustrations to portfolio websites and future products.
 
 This design system is not built around trends.
 
@@ -170,7 +170,7 @@ Beauty should come from thoughtful engineering.
 
 # Design Language
 
-The visual language of Project Polaris is inspired by
+The visual language of Polaris Design System is inspired by
 
 - Engineering documentation
 - System diagrams
@@ -228,7 +228,7 @@ line17
 
 # Design Goals
 
-Every artifact created under Project Polaris should be
+Every artifact created under Polaris Design System should be
 
 ✓ Minimal
 
@@ -262,7 +262,7 @@ keep improving.
 
 Designed and engineered by Prae.
 
-Project Polaris exists to explore the intersection of
+Polaris Design System exists to explore the intersection of
 
 Engineering
 
