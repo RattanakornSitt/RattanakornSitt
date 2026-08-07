@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+============================================================
+Polaris Design System
+Component Library
+
+File:
+    icons.svg
+
+Version:
+    1.0.0
+
+Purpose:
+    Reusable SVG symbol definitions.
+
+Usage:
+
+<svg width="24" height="24">
+    <use href="#icon-database"/>
+</svg>
+
+Designed & Engineered by Prae
+============================================================
+-->
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    style="display:none">
+
+    <defs>
+
+        <!-- ================================================= -->
+        <!-- DATABASE                                           -->
+        <!-- ================================================= -->
+
+        <symbol id="icon-database" viewBox="0 0 24 24">
+
+            <ellipse
+                cx="12"
+                cy="5"
+                rx="7"
+                ry="3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <path
+                d="M5 5
+                   V17
+                   C5 18.7 8.1 20 12 20
+                   C15.9 20 19 18.7 19 17
+                   V5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <path
+                d="M5 11
+                   C5 12.7 8.1 14 12 14
+                   C15.9 14 19 12.7 19 11"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+        </symbol>
+
+        <!-- ================================================= -->
+        <!-- TERMINAL                                           -->
+        <!-- ================================================= -->
+
+        <symbol id="icon-terminal" viewBox="0 0 24 24">
+
+            <polyline
+                points="5,7 10,12 5,17"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+
+            <line
+                x1="12"
+                y1="17"
+                x2="19"
+                y2="17"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"/>
+
+        </symbol>
+
+        <!-- ================================================= -->
+        <!-- PIPELINE                                           -->
+        <!-- ================================================= -->
+
+        <symbol id="icon-pipeline" viewBox="0 0 24 24">
+
+            <circle
+                cx="5"
+                cy="12"
+                r="2"
+                fill="currentColor"/>
+
+            <circle
+                cx="12"
+                cy="12"
+                r="2"
+                fill="currentColor"/>
+
+            <circle
+                cx="19"
+                cy="12"
+                r="2"
+                fill="currentColor"/>
+
+            <line
+                x1="7"
+                y1="12"
+                x2="10"
+                y2="12"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <line
+                x1="14"
+                y1="12"
+                x2="17"
+                y2="12"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+        </symbol>
+
+        <!-- ================================================= -->
+        <!-- CLOUD                                              -->
+        <!-- ================================================= -->
+
+        <symbol id="icon-cloud" viewBox="0 0 24 24">
+
+            <path
+                d="M7 18
+                   H18
+                   A4 4 0 0 0 18 10
+                   A5.5 5.5 0 0 0 7.3 9.2
+                   A3.5 3.5 0 0 0 7 18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+
+        </symbol>
+
+        <!-- ================================================= -->
+        <!-- AI                                                 -->
+        <!-- ================================================= -->
+
+        <symbol id="icon-ai" viewBox="0 0 24 24">
+
+            <circle
+                cx="12"
+                cy="12"
+                r="5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <line
+                x1="12"
+                y1="2"
+                x2="12"
+                y2="6"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <line
+                x1="12"
+                y1="18"
+                x2="12"
+                y2="22"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <line
+                x1="2"
+                y1="12"
+                x2="6"
+                y2="12"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <line
+                x1="18"
+                y1="12"
+                x2="22"
+                y2="12"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+        </symbol>
+
+        <!-- ================================================= -->
+        <!-- GIT                                                -->
+        <!-- ================================================= -->
+
+        <symbol id="icon-git" viewBox="0 0 24 24">
+
+            <circle
+                cx="6"
+                cy="6"
+                r="2"
+                fill="currentColor"/>
+
+            <circle
+                cx="18"
+                cy="6"
+                r="2"
+                fill="currentColor"/>
+
+            <circle
+                cx="12"
+                cy="18"
+                r="2"
+                fill="currentColor"/>
+
+            <line
+                x1="6"
+                y1="6"
+                x2="18"
+                y2="6"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+            <line
+                x1="12"
+                y1="18"
+                x2="12"
+                y2="8"
+                stroke="currentColor"
+                stroke-width="1.8"/>
+
+        </symbol>
+
+    </defs>
+
+</svg>
