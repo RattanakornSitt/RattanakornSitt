@@ -1,4 +1,4 @@
-# Project Polaris
+# Polaris Design System
 
 > Spacing System
 
@@ -20,7 +20,7 @@ A clean layout is often the result of consistent spacing—not more decoration.
 
 # Base Unit
 
-Project Polaris uses an **8-point spacing system**.
+Polaris Design System uses an **8-point spacing system**.
 
 Every measurement should be a multiple of **8px** whenever possible.
 
@@ -253,7 +253,7 @@ Random positioning makes layouts feel inconsistent.
 
 # Density
 
-Project Polaris prefers **comfortable density**.
+Polaris Design System prefers **comfortable density**.
 
 Interfaces should breathe.
 
@@ -310,4 +310,4 @@ Whitespace is not wasted space.
 
 It is where clarity lives.
 
-Project Polaris treats spacing as an essential part of engineering—not decoration.
+Polaris Design System treats spacing as an essential part of engineering—not decoration.
