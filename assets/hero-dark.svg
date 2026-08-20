@@ -4,19 +4,17 @@
 
 Polaris Design System
 
-Asset
-Hero Dark
+Component
+Hero Banner — Dark
 
 Version
-1.0
+2.0
 
 Purpose
-Dark mode hero banner for GitHub profile.
+Dark-theme GitHub profile hero banner for Rattanakorn Sittisang.
 
-Design Philosophy:
-Engineering blueprint.
-Thoughtful product engineering.
-System thinking.
+Design language
+Calm engineering system / data flow / structured technology.
 
 ====================================================================
 -->
@@ -26,258 +24,852 @@ System thinking.
     width="1280"
     height="640"
     viewBox="0 0 1280 640"
+    fill="none"
     role="img"
-    aria-labelledby="title desc">
+    aria-labelledby="hero-title hero-desc">
 
-<title>
-Rattanakorn Sittisang — Thoughtful Product Engineer
-</title>
+    <title id="hero-title">
+        Rattanakorn Sittisang — Data Engineer · Software Engineer
+    </title>
 
-<desc>
-Dark engineering blueprint hero banner representing product engineering,
-system thinking, and human-centered software design.
-</desc>
+    <desc id="hero-desc">
+        Dark engineering profile banner showing data flow, system architecture,
+        analytics, and software engineering.
+    </desc>
+
+    <defs>
+
+        <!-- Background grid -->
+        <pattern
+            id="grid"
+            width="40"
+            height="40"
+            patternUnits="userSpaceOnUse">
+
+            <path
+                d="M40 0H0V40"
+                stroke="#334155"
+                stroke-width="1"
+                opacity="0.32"/>
+        </pattern>
+
+        <!-- Blue ambient glow -->
+        <radialGradient
+            id="blue-glow"
+            cx="0"
+            cy="0"
+            r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(1080 420) rotate(90) scale(280)">
+
+            <stop
+                offset="0"
+                stop-color="#2563EB"
+                stop-opacity="0.18"/>
+
+            <stop
+                offset="0.45"
+                stop-color="#2563EB"
+                stop-opacity="0.06"/>
+
+            <stop
+                offset="1"
+                stop-color="#2563EB"
+                stop-opacity="0"/>
+        </radialGradient>
+
+        <!-- System core -->
+        <linearGradient
+            id="core-gradient"
+            x1="1180"
+            y1="250"
+            x2="1180"
+            y2="390"
+            gradientUnits="userSpaceOnUse">
+
+            <stop
+                stop-color="#1E293B"/>
+
+            <stop
+                offset="1"
+                stop-color="#020617"/>
+        </linearGradient>
+
+        <!-- System line -->
+        <linearGradient
+            id="system-line"
+            x1="900"
+            y1="150"
+            x2="1180"
+            y2="470"
+            gradientUnits="userSpaceOnUse">
+
+            <stop
+                stop-color="#60A5FA"/>
+
+            <stop
+                offset="0.5"
+                stop-color="#2563EB"/>
+
+            <stop
+                offset="1"
+                stop-color="#1D4ED8"/>
+        </linearGradient>
+
+        <!-- Arrow -->
+        <marker
+            id="arrow"
+            viewBox="0 0 10 10"
+            refX="8"
+            refY="5"
+            markerWidth="6"
+            markerHeight="6"
+            orient="auto-start-reverse">
+
+            <path
+                d="M0 0L10 5L0 10Z"
+                fill="#60A5FA"/>
+        </marker>
+
+    </defs>
 
 
-<!-- ========================================================== -->
-<!-- BACKGROUND                                                 -->
-<!-- ========================================================== -->
+    <!-- ============================================================
+         BACKGROUND
+         ============================================================ -->
 
-<rect
-    width="1280"
-    height="640"
-    fill="#0B1120"/>
+    <rect
+        width="1280"
+        height="640"
+        fill="#020617"/>
+
+    <rect
+        width="1280"
+        height="640"
+        fill="url(#grid)"/>
+
+    <rect
+        width="1280"
+        height="640"
+        fill="url(#blue-glow)"/>
 
 
-<!-- ========================================================== -->
-<!-- BLUEPRINT GRID                                             -->
-<!-- ========================================================== -->
+    <!-- ============================================================
+         POLARIS MARK
+         ============================================================ -->
 
-<defs>
-
-    <pattern
-        id="dark-grid"
-        width="40"
-        height="40"
-        patternUnits="userSpaceOnUse">
+    <g transform="translate(72 58)">
 
         <path
-            d="M40 0H0V40"
-            fill="none"
-            stroke="#334155"
-            stroke-width="1"
-            opacity="0.35"/>
+            d="
+                M14 0
+                L18 10
+                L28 14
+                L18 18
+                L14 28
+                L10 18
+                L0 14
+                L10 10
+                Z"
+            fill="#60A5FA"/>
 
-    </pattern>
+        <circle
+            cx="14"
+            cy="14"
+            r="3"
+            fill="#020617"/>
 
-</defs>
+        <text
+            x="42"
+            y="19"
+            font-family="IBM Plex Sans, Arial, sans-serif"
+            font-size="15"
+            font-weight="600"
+            letter-spacing="6"
+            fill="#60A5FA">
+            POLARIS
+        </text>
+
+    </g>
 
 
-<rect
-    width="1280"
-    height="640"
-    fill="url(#dark-grid)"/>
+    <!-- ============================================================
+         LEFT CONTENT
+         ============================================================ -->
+
+    <!-- Name -->
+    <text
+        x="72"
+        y="165"
+        font-family="IBM Plex Sans, Arial, sans-serif"
+        font-size="54"
+        font-weight="700"
+        letter-spacing="-1.8"
+        fill="#F8FAFC">
+        RATTANAKORN SITTISANG
+    </text>
 
 
-<!-- ========================================================== -->
-<!-- ENGINEERING NETWORK                                         -->
-<!-- ========================================================== -->
-
-<g
-    id="engineering-network"
-    opacity="0.16"
-    stroke="#60A5FA"
-    stroke-width="2"
-    fill="none">
-
+    <!-- Divider -->
+    <line
+        x1="72"
+        y1="190"
+        x2="650"
+        y2="190"
+        stroke="#334155"
+        stroke-width="1"/>
 
     <circle
-        cx="640"
-        cy="320"
-        r="170"/>
+        cx="72"
+        cy="190"
+        r="4"
+        fill="#60A5FA"/>
 
+
+    <!-- Role -->
+    <text
+        x="72"
+        y="235"
+        font-family="IBM Plex Sans, Arial, sans-serif"
+        font-size="28"
+        font-weight="600"
+        fill="#60A5FA">
+        Data Engineer
+    </text>
+
+    <circle
+        cx="278"
+        cy="226"
+        r="3"
+        fill="#64748B"/>
+
+    <text
+        x="300"
+        y="235"
+        font-family="IBM Plex Sans, Arial, sans-serif"
+        font-size="28"
+        font-weight="500"
+        fill="#F8FAFC">
+        Software Engineer
+    </text>
+
+
+    <!-- Description -->
+    <text
+        x="72"
+        y="280"
+        font-family="IBM Plex Sans, Arial, sans-serif"
+        font-size="19"
+        font-weight="400"
+        fill="#CBD5E1">
+
+        <tspan x="72" dy="0">
+            Building data systems, analytical platforms, and software
+        </tspan>
+
+        <tspan x="72" dy="30">
+            that turn complex information into reliable products.
+        </tspan>
+
+    </text>
+
+
+    <!-- ============================================================
+         ENGINEERING FLOW
+         ============================================================ -->
+
+    <g transform="translate(72 355)">
+
+        <line
+            x1="0"
+            y1="22"
+            x2="550"
+            y2="22"
+            stroke="#334155"
+            stroke-width="1"/>
+
+
+        <!-- SOURCE -->
+        <rect
+            x="0"
+            y="0"
+            width="78"
+            height="44"
+            rx="22"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="39"
+            y="27"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            font-weight="500"
+            fill="#CBD5E1">
+            SOURCE
+        </text>
+
+
+        <!-- INGEST -->
+        <rect
+            x="92"
+            y="0"
+            width="78"
+            height="44"
+            rx="22"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="131"
+            y="27"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            font-weight="500"
+            fill="#CBD5E1">
+            INGEST
+        </text>
+
+
+        <!-- TRANSFORM -->
+        <rect
+            x="184"
+            y="0"
+            width="108"
+            height="44"
+            rx="22"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="238"
+            y="27"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            font-weight="500"
+            fill="#CBD5E1">
+            TRANSFORM
+        </text>
+
+
+        <!-- STORE -->
+        <rect
+            x="306"
+            y="0"
+            width="78"
+            height="44"
+            rx="22"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="345"
+            y="27"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            font-weight="500"
+            fill="#CBD5E1">
+            STORE
+        </text>
+
+
+        <!-- ANALYZE -->
+        <rect
+            x="398"
+            y="0"
+            width="92"
+            height="44"
+            rx="22"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="444"
+            y="27"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            font-weight="500"
+            fill="#CBD5E1">
+            ANALYZE
+        </text>
+
+
+        <!-- PRODUCT -->
+        <rect
+            x="504"
+            y="0"
+            width="90"
+            height="44"
+            rx="22"
+            fill="#2563EB"
+            stroke="#60A5FA"/>
+
+        <text
+            x="549"
+            y="27"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            font-weight="500"
+            fill="#FFFFFF">
+            PRODUCT
+        </text>
+
+    </g>
+
+
+    <!-- ============================================================
+         TECHNOLOGY
+         ============================================================ -->
+
+    <g transform="translate(72 445)">
+
+        <!-- Python -->
+        <rect
+            x="0"
+            y="0"
+            width="96"
+            height="38"
+            rx="8"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="48"
+            y="24"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            fill="#CBD5E1">
+            Python
+        </text>
+
+
+        <!-- SQL -->
+        <rect
+            x="108"
+            y="0"
+            width="76"
+            height="38"
+            rx="8"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="146"
+            y="24"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            fill="#CBD5E1">
+            SQL
+        </text>
+
+
+        <!-- PostgreSQL -->
+        <rect
+            x="196"
+            y="0"
+            width="116"
+            height="38"
+            rx="8"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="254"
+            y="24"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            fill="#CBD5E1">
+            PostgreSQL
+        </text>
+
+
+        <!-- AWS -->
+        <rect
+            x="324"
+            y="0"
+            width="76"
+            height="38"
+            rx="8"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="362"
+            y="24"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            fill="#CBD5E1">
+            AWS
+        </text>
+
+
+        <!-- Next.js -->
+        <rect
+            x="412"
+            y="0"
+            width="88"
+            height="38"
+            rx="8"
+            fill="#0F172A"
+            stroke="#334155"/>
+
+        <text
+            x="456"
+            y="24"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="12"
+            fill="#CBD5E1">
+            Next.js
+        </text>
+
+    </g>
+
+
+    <!-- ============================================================
+         RIGHT SYSTEM
+         ============================================================ -->
+
+    <g>
+
+        <!-- Outer rings -->
+        <circle
+            cx="1035"
+            cy="315"
+            r="205"
+            stroke="#334155"
+            stroke-width="1"
+            stroke-dasharray="2 7"/>
+
+        <circle
+            cx="1035"
+            cy="315"
+            r="170"
+            stroke="#334155"
+            stroke-width="1"
+            opacity="0.8"/>
+
+        <circle
+            cx="1035"
+            cy="315"
+            r="135"
+            stroke="url(#system-line)"
+            stroke-width="2"/>
+
+
+        <!-- Radial guides -->
+        <g
+            stroke="#334155"
+            stroke-width="1"
+            opacity="0.8">
+
+            <line x1="1035" y1="110" x2="1035" y2="520"/>
+            <line x1="830" y1="315" x2="1240" y2="315"/>
+
+            <line
+                x1="890"
+                y1="170"
+                x2="1180"
+                y2="460"/>
+
+            <line
+                x1="1180"
+                y1="170"
+                x2="890"
+                y2="460"/>
+
+        </g>
+
+
+        <!-- Flow arrows -->
+
+        <path
+            d="M1035 180 C1120 180 1170 230 1170 315"
+            stroke="#60A5FA"
+            stroke-width="1.5"
+            marker-end="url(#arrow)"/>
+
+        <path
+            d="M1170 315 C1170 400 1120 450 1035 450"
+            stroke="#60A5FA"
+            stroke-width="1.5"
+            marker-end="url(#arrow)"/>
+
+        <path
+            d="M1035 450 C950 450 900 400 900 315"
+            stroke="#60A5FA"
+            stroke-width="1.5"
+            marker-end="url(#arrow)"/>
+
+        <path
+            d="M900 315 C900 230 950 180 1035 180"
+            stroke="#60A5FA"
+            stroke-width="1.5"
+            marker-end="url(#arrow)"/>
+
+
+        <!-- System core -->
+
+        <polygon
+            points="
+                1035,250
+                1090,282
+                1090,348
+                1035,380
+                980,348
+                980,282
+            "
+            fill="url(#core-gradient)"
+            stroke="#2563EB"
+            stroke-width="2"/>
+
+        <polygon
+            points="
+                1035,270
+                1068,289
+                1068,327
+                1035,346
+                1002,327
+                1002,289
+            "
+            stroke="#60A5FA"
+            stroke-width="1"
+            opacity="0.7"/>
+
+        <circle
+            cx="1035"
+            cy="308"
+            r="5"
+            fill="#60A5FA"/>
+
+        <text
+            x="1035"
+            y="337"
+            text-anchor="middle"
+            font-family="IBM Plex Mono, monospace"
+            font-size="11"
+            font-weight="500"
+            letter-spacing="1"
+            fill="#F8FAFC">
+            SYSTEM
+        </text>
+
+
+        <!-- INGEST -->
+
+        <g transform="translate(1035 180)">
+
+            <circle
+                r="30"
+                fill="#0F172A"
+                stroke="#475569"/>
+
+            <circle
+                r="4"
+                cy="-8"
+                fill="#60A5FA"/>
+
+            <path
+                d="M-9 4H9M0 -4V10M-6 5L0 11L6 5"
+                stroke="#60A5FA"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+
+            <text
+                x="0"
+                y="-42"
+                text-anchor="middle"
+                font-family="IBM Plex Mono, monospace"
+                font-size="11"
+                font-weight="500"
+                fill="#CBD5E1">
+                INGEST
+            </text>
+
+        </g>
+
+
+        <!-- TRANSFORM -->
+
+        <g transform="translate(1170 315)">
+
+            <circle
+                r="30"
+                fill="#0F172A"
+                stroke="#475569"/>
+
+            <circle cx="-8" cy="-7" r="3" fill="#60A5FA"/>
+            <circle cx="8" cy="7" r="3" fill="#60A5FA"/>
+            <circle cx="8" cy="-8" r="3" fill="#60A5FA"/>
+
+            <path
+                d="M-5 -6L5 -8M-5 -5L5 6"
+                stroke="#60A5FA"
+                stroke-width="1.5"/>
+
+            <text
+                x="0"
+                y="-42"
+                text-anchor="middle"
+                font-family="IBM Plex Mono, monospace"
+                font-size="11"
+                font-weight="500"
+                fill="#CBD5E1">
+                TRANSFORM
+            </text>
+
+        </g>
+
+
+        <!-- STORE -->
+
+        <g transform="translate(1035 450)">
+
+            <circle
+                r="30"
+                fill="#0F172A"
+                stroke="#475569"/>
+
+            <ellipse
+                cx="0"
+                cy="-7"
+                rx="10"
+                ry="4"
+                stroke="#60A5FA"
+                stroke-width="1.5"/>
+
+            <path
+                d="M-10 -7V8C-10 11 10 11 10 8V-7"
+                stroke="#60A5FA"
+                stroke-width="1.5"/>
+
+            <path
+                d="M-10 0C-10 3 10 3 10 0"
+                stroke="#60A5FA"
+                stroke-width="1.5"/>
+
+            <text
+                x="0"
+                y="48"
+                text-anchor="middle"
+                font-family="IBM Plex Mono, monospace"
+                font-size="11"
+                font-weight="500"
+                fill="#CBD5E1">
+                STORE
+            </text>
+
+        </g>
+
+
+        <!-- ANALYZE -->
+
+        <g transform="translate(900 315)">
+
+            <circle
+                r="30"
+                fill="#0F172A"
+                stroke="#475569"/>
+
+            <rect
+                x="-10"
+                y="0"
+                width="5"
+                height="9"
+                fill="#60A5FA"/>
+
+            <rect
+                x="-2"
+                y="-6"
+                width="5"
+                height="15"
+                fill="#60A5FA"/>
+
+            <rect
+                x="6"
+                y="-13"
+                width="5"
+                height="22"
+                fill="#60A5FA"/>
+
+            <text
+                x="0"
+                y="-42"
+                text-anchor="middle"
+                font-family="IBM Plex Mono, monospace"
+                font-size="11"
+                font-weight="500"
+                fill="#CBD5E1">
+                ANALYZE
+            </text>
+
+        </g>
+
+
+        <!-- Outer signal points -->
+
+        <g fill="#60A5FA">
+
+            <circle cx="1035" cy="110" r="3"/>
+            <circle cx="1240" cy="315" r="3"/>
+            <circle cx="1035" cy="520" r="3"/>
+            <circle cx="830" cy="315" r="3"/>
+
+        </g>
+
+        <g fill="#64748B">
+
+            <circle cx="890" cy="170" r="2.5"/>
+            <circle cx="1180" cy="170" r="2.5"/>
+            <circle cx="1180" cy="460" r="2.5"/>
+            <circle cx="890" cy="460" r="2.5"/>
+
+        </g>
+
+    </g>
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
 
     <line
-        x1="640"
-        y1="320"
-        x2="640"
-        y2="150"/>
+        x1="72"
+        y1="555"
+        x2="1208"
+        y2="555"
+        stroke="#1E293B"
+        stroke-width="1"/>
 
+    <text
+        x="72"
+        y="590"
+        font-family="IBM Plex Mono, monospace"
+        font-size="12"
+        letter-spacing="1.5"
+        fill="#64748B">
+        BUILD · LEARN · MEASURE · IMPROVE
+    </text>
 
-    <line
-        x1="640"
-        y1="320"
-        x2="787"
-        y2="235"/>
-
-
-    <line
-        x1="640"
-        y1="320"
-        x2="787"
-        y2="405"/>
-
-
-    <line
-        x1="640"
-        y1="320"
-        x2="640"
-        y2="490"/>
-
-
-    <line
-        x1="640"
-        y1="320"
-        x2="493"
-        y2="405"/>
-
-
-    <line
-        x1="640"
-        y1="320"
-        x2="493"
-        y2="235"/>
-
-
-    <polygon
-        points="
-        640,295
-        664,308
-        664,332
-        640,345
-        616,332
-        616,308"/>
-
-
-</g>
-
-
-
-<!-- ========================================================== -->
-<!-- BRAND                                                       -->
-<!-- ========================================================== -->
-
-
-<text
-    x="100"
-    y="150"
-    font-family="IBM Plex Sans, Arial, sans-serif"
-    font-size="68"
-    font-weight="700"
-    fill="#F8FAFC">
-
-Rattanakorn Sittisang
-
-</text>
-
-
-
-<text
-    x="100"
-    y="205"
-    font-family="IBM Plex Sans, Arial, sans-serif"
-    font-size="30"
-    fill="#60A5FA">
-
-Thoughtful Product Engineer
-
-</text>
-
-
-
-<text
-    x="100"
-    y="265"
-    font-family="IBM Plex Sans, Arial, sans-serif"
-    font-size="26"
-    fill="#E2E8F0">
-
-Designing systems people don't have to think about.
-
-</text>
-
-
-
-<text
-    x="100"
-    y="315"
-    font-family="IBM Plex Sans, Arial, sans-serif"
-    font-size="20"
-    fill="#94A3B8">
-
-Understanding people • Designing reliable systems • Building products worth using
-
-</text>
-
-
-
-<!-- ========================================================== -->
-<!-- DIVIDER                                                     -->
-<!-- ========================================================== -->
-
-
-<line
-    x1="100"
-    y1="360"
-    x2="620"
-    y2="360"
-    stroke="#334155"
-    stroke-width="2"/>
-
-
-
-<!-- ========================================================== -->
-<!-- PROJECT IDENTITY                                            -->
-<!-- ========================================================== -->
-
-
-<text
-    x="100"
-    y="420"
-    font-family="IBM Plex Mono, monospace"
-    font-size="18"
-    fill="#94A3B8">
-
-PROJECT POLARIS / DESIGN SYSTEM V1.0
-
-</text>
-
-
-
-<!-- ========================================================== -->
-<!-- MISSION QUOTE                                               -->
-<!-- ========================================================== -->
-
-
-<text
-    x="100"
-    y="485"
-    font-family="IBM Plex Sans, Arial, sans-serif"
-    font-size="24"
-    fill="#F8FAFC">
-
-"Build software you'd love to use yourself."
-
-</text>
-
-
-
-<!-- ========================================================== -->
-<!-- FOOTER                                                      -->
-<!-- ========================================================== -->
-
-
-<text
-    x="1180"
-    y="600"
-    text-anchor="end"
-    font-family="IBM Plex Mono, monospace"
-    font-size="16"
-    fill="#64748B">
-
-github.com/&lt;RattanakornSitt&gt;
-
-</text>
-
+    <text
+        x="1208"
+        y="590"
+        text-anchor="end"
+        font-family="IBM Plex Mono, monospace"
+        font-size="12"
+        fill="#64748B">
+        github.com/RattanakornSitt
+    </text>
 
 </svg>
