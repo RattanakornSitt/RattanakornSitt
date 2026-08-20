@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title>Rattanakorn Sittisang — Thoughtful Product Engineer</title>
+<desc>Hero banner for GitHub profile.</desc>
+
+<rect width="1280" height="640" fill="#FAFAF9"/>
+
+<defs>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#CBD5E1" stroke-width="1" opacity="0.25"/>
+  </pattern>
+</defs>
+
+<rect width="1280" height="640" fill="url(#grid)"/>
+
+<g opacity="0.08" stroke="#2563EB" stroke-width="2" fill="none">
+  <circle cx="640" cy="320" r="170"/>
+  <circle cx="640" cy="150" r="8"/>
+  <circle cx="787" cy="235" r="8"/>
+  <circle cx="787" cy="405" r="8"/>
+  <circle cx="640" cy="490" r="8"/>
+  <circle cx="493" cy="405" r="8"/>
+  <circle cx="493" cy="235" r="8"/>
+  <polygon points="640,295 662,307 662,333 640,345 618,333 618,307"/>
+</g>
+
+<text x="100" y="145" font-family="IBM Plex Sans,Arial,sans-serif" font-size="64" font-weight="700" fill="#0F172A">Prae</text>
+
+<text x="100" y="195" font-family="IBM Plex Sans,Arial,sans-serif" font-size="28" fill="#2563EB">
+Thoughtful Product Engineer
+</text>
+
+<text x="100" y="255" font-family="IBM Plex Sans,Arial,sans-serif" font-size="26" fill="#0F172A">
+Designing systems people don't have to think about.
+</text>
+
+<text x="100" y="300" font-family="IBM Plex Sans,Arial,sans-serif" font-size="20" fill="#475569">
+Understanding people • Designing reliable systems • Building products worth using
+</text>
+
+<line x1="100" y1="340" x2="620" y2="340" stroke="#CBD5E1"/>
+
+<text x="100" y="400" font-family="IBM Plex Mono,monospace" font-size="18" fill="#64748B">
+PROJECT POLARIS / DESIGN SYSTEM V1.0
+</text>
+
+<text x="100" y="455" font-family="IBM Plex Sans,Arial,sans-serif" font-size="22" fill="#0F172A">
+"Build software you'd love to use yourself."
+</text>
+
+<text x="1180" y="600" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="16" fill="#64748B">
+github.com/&lt;RattanakornSitt&gt;
+</text>
+</svg>

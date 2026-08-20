@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Signal Visualization
+
+Version
+4.0
+
+Purpose
+Reusable engineering signal geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="180"
+  viewBox="0 0 1200 180"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="signalGradient"
+      x1="0"
+      y1="90"
+      x2="1200"
+      y2="90"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0"
+      />
+
+      <stop
+        offset="0.25"
+        stop-color="#FFFFFF"
+        stop-opacity="0.35"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="1"
+      />
+
+      <stop
+        offset="0.75"
+        stop-color="#FFFFFF"
+        stop-opacity="0.35"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0"
+      />
+
+    </linearGradient>
+
+
+    <filter id="signalGlow">
+      <feGaussianBlur
+        stdDeviation="4"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Soft signal glow -->
+
+  <path
+    d="
+    M0 90
+    H250
+    L330 90
+    L390 40
+    L450 140
+    L520 70
+    L600 90
+    L680 110
+    L750 50
+    L810 90
+    H1200
+    "
+    stroke="#FFFFFF"
+    stroke-width="8"
+    stroke-opacity="0.12"
+    filter="url(#signalGlow)"
+  />
+
+
+  <!-- Main signal -->
+
+  <path
+    d="
+    M0 90
+    H250
+    L330 90
+    L390 40
+    L450 140
+    L520 70
+    L600 90
+    L680 110
+    L750 50
+    L810 90
+    H1200
+    "
+    stroke="url(#signalGradient)"
+    stroke-width="2"
+  />
+
+
+  <!-- Core data points -->
+
+  <circle
+    cx="390"
+    cy="40"
+    r="5"
+    fill="#FFFFFF"
+  />
+
+  <circle
+    cx="600"
+    cy="90"
+    r="6"
+    fill="#FFFFFF"
+  />
+
+  <circle
+    cx="750"
+    cy="50"
+    r="5"
+    fill="#FFFFFF"
+  />
+
+
+  <!-- Outer nodes -->
+
+  <circle
+    cx="390"
+    cy="40"
+    r="14"
+    stroke="#FFFFFF"
+    stroke-opacity="0.15"
+  />
+
+  <circle
+    cx="750"
+    cy="50"
+    r="14"
+    stroke="#FFFFFF"
+    stroke-opacity="0.15"
+  />
+
+
+</svg>

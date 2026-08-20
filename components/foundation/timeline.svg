@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Engineering Timeline
+
+Version
+4.0
+
+Purpose
+Reusable progression and milestone geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="360"
+  viewBox="0 0 1200 360"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="timelineGradient"
+      x1="120"
+      y1="180"
+      x2="1080"
+      y2="180"
+      gradientUnits="userSpaceOnUse"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.55"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+    </linearGradient>
+
+
+    <filter id="timelineGlow">
+      <feGaussianBlur
+        stdDeviation="7"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Ambient progression field -->
+
+  <path
+    d="
+      M120 180
+      C300 180 330 180 430 145
+      C520 113 570 95 660 115
+      C760 138 790 180 880 180
+      C950 180 1010 180 1080 180
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+    stroke-width="12"
+    filter="url(#timelineGlow)"
+  />
+
+
+  <!-- Main trajectory -->
+
+  <path
+    d="
+      M120 180
+      C300 180 330 180 430 145
+      C520 113 570 95 660 115
+      C760 138 790 180 880 180
+      C950 180 1010 180 1080 180
+    "
+    stroke="url(#timelineGradient)"
+    stroke-width="2"
+  />
+
+
+  <!-- Milestone branches -->
+
+  <path
+    d="M280 180V105"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+  />
+
+  <path
+    d="M500 123V255"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+  />
+
+  <path
+    d="M700 124V80"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+  />
+
+  <path
+    d="M900 180V270"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+  />
+
+
+  <!-- Milestone nodes -->
+
+  <circle
+    cx="280"
+    cy="180"
+    r="11"
+    fill="#FFFFFF"
+    opacity="0.7"
+  />
+
+  <circle
+    cx="500"
+    cy="123"
+    r="12"
+    fill="#FFFFFF"
+    opacity="0.85"
+  />
+
+  <circle
+    cx="700"
+    cy="124"
+    r="13"
+    fill="#FFFFFF"
+    opacity="0.95"
+  />
+
+  <circle
+    cx="900"
+    cy="180"
+    r="11"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+
+  <!-- Milestone rings -->
+
+  <circle
+    cx="500"
+    cy="123"
+    r="28"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+  <circle
+    cx="700"
+    cy="124"
+    r="34"
+    stroke="#FFFFFF"
+    stroke-opacity="0.12"
+  />
+
+
+  <!-- Progress markers -->
+
+  <circle
+    cx="380"
+    cy="162"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+  <circle
+    cx="600"
+    cy="106"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="800"
+    cy="160"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+
+  <!-- Terminal points -->
+
+  <circle
+    cx="120"
+    cy="180"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+  <circle
+    cx="1080"
+    cy="180"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+</svg>

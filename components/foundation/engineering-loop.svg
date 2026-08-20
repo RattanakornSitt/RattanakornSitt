@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Engineering Loop
+
+Version
+4.0
+
+Purpose
+Reusable engineering loop geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to the consuming context.
+
+====================================================================
+-->
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 320 320"
+    width="320"
+    height="320"
+    fill="none"
+    role="img"
+    aria-labelledby="engineering-loop-title engineering-loop-desc">
+
+    <title id="engineering-loop-title">Engineering Loop</title>
+
+    <desc id="engineering-loop-desc">
+        A six-node circular engineering workflow surrounding a central system core.
+    </desc>
+
+    <style>
+        .loop-line {
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+        }
+
+        .loop-node {
+            fill: currentColor;
+        }
+
+        .system-core {
+            fill: currentColor;
+        }
+    </style>
+
+    <!-- Engineering loop -->
+    <circle
+        class="loop-line"
+        cx="100"
+        cy="100"
+        r="55"/>
+
+    <!-- Nodes -->
+    <circle
+        id="node-top"
+        class="loop-node"
+        cx="160"
+        cy="55"
+        r="7"/>
+
+    <circle
+        id="node-top-right"
+        class="loop-node"
+        cx="250.93"
+        cy="107.5"
+        r="7"/>
+
+    <circle
+        id="node-bottom-right"
+        class="loop-node"
+        cx="250.93"
+        cy="212.5"
+        r="7"/>
+
+    <circle
+        id="node-bottom"
+        class="loop-node"
+        cx="160"
+        cy="265"
+        r="7"/>
+
+    <circle
+        id="node-bottom-left"
+        class="loop-node"
+        cx="69.07"
+        cy="212.5"
+        r="7"/>
+
+    <circle
+        id="node-top-left"
+        class="loop-node"
+        cx="69.07"
+        cy="107.5"
+        r="7"/>
+
+    <!-- System core -->
+    <polygon
+        class="system-core"
+        points="
+            160,139
+            178,149.5
+            178,170.5
+            160,181
+            142,170.5
+            142,149.5
+        "/>
+
+</svg>

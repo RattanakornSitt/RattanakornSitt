@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Code Flow
+
+Version
+4.0
+
+Purpose
+Reusable software engineering and version-control geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="440"
+  viewBox="0 0 1200 440"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="branchGradient"
+      x1="160"
+      y1="220"
+      x2="1040"
+      y2="220"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.55"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+    </linearGradient>
+
+
+    <filter id="commitGlow">
+      <feGaussianBlur
+        stdDeviation="6"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Main branch -->
+
+  <path
+    d="
+      M160 220
+      H1040
+    "
+    stroke="url(#branchGradient)"
+    stroke-width="2"
+  />
+
+
+  <!-- Feature branch -->
+
+  <path
+    d="
+      M380 220
+      C430 220 430 110 500 110
+      H720
+      C790 110 790 220 840 220
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.28"
+    stroke-width="2"
+  />
+
+
+  <!-- Secondary branch -->
+
+  <path
+    d="
+      M520 220
+      C570 220 570 330 640 330
+      H780
+      C830 330 830 220 880 220
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+    stroke-width="2"
+  />
+
+
+  <!-- Main commits -->
+
+  <circle
+    cx="240"
+    cy="220"
+    r="9"
+    fill="#FFFFFF"
+    opacity="0.7"
+  />
+
+  <circle
+    cx="380"
+    cy="220"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.85"
+  />
+
+  <circle
+    cx="520"
+    cy="220"
+    r="9"
+    fill="#FFFFFF"
+    opacity="0.7"
+  />
+
+  <circle
+    cx="700"
+    cy="220"
+    r="11"
+    fill="#FFFFFF"
+    opacity="0.95"
+  />
+
+  <circle
+    cx="840"
+    cy="220"
+    r="9"
+    fill="#FFFFFF"
+    opacity="0.7"
+  />
+
+  <circle
+    cx="960"
+    cy="220"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.85"
+  />
+
+
+  <!-- Feature branch commits -->
+
+  <circle
+    cx="500"
+    cy="110"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.65"
+  />
+
+  <circle
+    cx="620"
+    cy="110"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+  <circle
+    cx="720"
+    cy="110"
+    r="9"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+
+  <!-- Secondary branch commits -->
+
+  <circle
+    cx="640"
+    cy="330"
+    r="7"
+    fill="#FFFFFF"
+    opacity="0.5"
+  />
+
+  <circle
+    cx="780"
+    cy="330"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.65"
+  />
+
+
+  <!-- Highlighted commit -->
+
+  <circle
+    cx="700"
+    cy="220"
+    r="30"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+    filter="url(#commitGlow)"
+  />
+
+  <circle
+    cx="700"
+    cy="220"
+    r="18"
+    stroke="#FFFFFF"
+    stroke-opacity="0.16"
+  />
+
+
+  <!-- Repository endpoints -->
+
+  <path
+    d="
+      M130 220
+      L160 205
+      L160 235
+      Z
+    "
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+  <path
+    d="
+      M1070 220
+      L1040 205
+      L1040 235
+      Z
+    "
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+
+  <!-- Small activity points -->
+
+  <circle
+    cx="320"
+    cy="180"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.3"
+  />
+
+  <circle
+    cx="900"
+    cy="180"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.3"
+  />
+
+  <circle
+    cx="560"
+    cy="290"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.3"
+  />
+
+</svg>

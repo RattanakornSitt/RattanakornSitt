@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Terminal Interface
+
+Version
+4.0
+
+Purpose
+Reusable developer environment geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="360"
+  viewBox="0 0 1200 360"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="panelGradient"
+      x1="0"
+      y1="0"
+      x2="0"
+      y2="1"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.08"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.02"
+      />
+
+    </linearGradient>
+
+
+    <filter id="terminalGlow">
+      <feGaussianBlur
+        stdDeviation="6"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Terminal container -->
+
+  <rect
+    x="120"
+    y="60"
+    width="960"
+    height="240"
+    rx="18"
+    fill="url(#panelGradient)"
+    stroke="#FFFFFF"
+    stroke-opacity="0.15"
+  />
+
+
+  <!-- Header bar -->
+
+  <line
+    x1="120"
+    y1="110"
+    x2="1080"
+    y2="110"
+    stroke="#FFFFFF"
+    stroke-opacity="0.12"
+  />
+
+
+  <!-- Window controls -->
+
+  <circle
+    cx="170"
+    cy="85"
+    r="7"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="200"
+    cy="85"
+    r="7"
+    fill="#FFFFFF"
+    opacity="0.25"
+  />
+
+  <circle
+    cx="230"
+    cy="85"
+    r="7"
+    fill="#FFFFFF"
+    opacity="0.15"
+  />
+
+
+  <!-- Command indicator -->
+
+  <path
+    d="
+    M190 170
+    L220 200
+    L190 230
+    "
+    stroke="#FFFFFF"
+    stroke-width="3"
+    stroke-opacity="0.8"
+  />
+
+
+  <line
+    x1="250"
+    y1="200"
+    x2="760"
+    y2="200"
+    stroke="#FFFFFF"
+    stroke-opacity="0.35"
+    stroke-width="3"
+  />
+
+
+  <!-- Cursor -->
+
+  <rect
+    x="800"
+    y="186"
+    width="14"
+    height="28"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+
+  <!-- System glow -->
+
+  <circle
+    cx="900"
+    cy="200"
+    r="60"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+    filter="url(#terminalGlow)"
+  />
+
+
+  <!-- Status nodes -->
+
+  <circle
+    cx="920"
+    cy="145"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.6"
+  />
+
+  <circle
+    cx="950"
+    cy="145"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+  <circle
+    cx="980"
+    cy="145"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.2"
+  />
+
+
+</svg>

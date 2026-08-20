@@ -260,7 +260,7 @@ keep improving.
 
 # Signature
 
-Designed and engineered by Prae.
+Designed and engineered by Rattanakorn Sittisang.
 
 Polaris Design System exists to explore the intersection of
 

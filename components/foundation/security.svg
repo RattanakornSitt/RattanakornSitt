@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Security Architecture
+
+Version
+4.0
+
+Purpose
+Reusable security and system protection geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="460"
+  viewBox="0 0 1200 460"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="shieldGradient"
+      x1="320"
+      y1="70"
+      x2="880"
+      y2="390"
+      gradientUnits="userSpaceOnUse"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.18"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.04"
+      />
+
+    </linearGradient>
+
+
+    <filter id="securityGlow">
+      <feGaussianBlur
+        stdDeviation="8"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Security boundary -->
+
+  <path
+    d="
+      M600 55
+      L850 135
+      V235
+      C850 315 750 375 600 415
+      C450 375 350 315 350 235
+      V135
+      Z
+    "
+    fill="url(#shieldGradient)"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+    stroke-width="2"
+  />
+
+
+  <!-- Inner boundary -->
+
+  <path
+    d="
+      M600 95
+      L810 160
+      V235
+      C810 292 732 342 600 378
+      C468 342 390 292 390 235
+      V160
+      Z
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.09"
+  />
+
+
+  <!-- Protection field -->
+
+  <circle
+    cx="600"
+    cy="230"
+    r="110"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+    filter="url(#securityGlow)"
+  />
+
+
+  <!-- Central security core -->
+
+  <circle
+    cx="600"
+    cy="230"
+    r="34"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+  <circle
+    cx="600"
+    cy="230"
+    r="11"
+    fill="#FFFFFF"
+    opacity="0.9"
+  />
+
+
+  <!-- Authentication path -->
+
+  <path
+    d="
+      M430 230
+      H500
+      C535 230 545 205 570 205
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.28"
+    stroke-width="2"
+  />
+
+  <path
+    d="
+      M770 230
+      H700
+      C665 230 655 255 630 255
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.28"
+    stroke-width="2"
+  />
+
+
+  <!-- Access nodes -->
+
+  <circle
+    cx="430"
+    cy="230"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.55"
+  />
+
+  <circle
+    cx="770"
+    cy="230"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.55"
+  />
+
+
+  <!-- Security checkpoints -->
+
+  <circle
+    cx="500"
+    cy="230"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.4"
+  />
+
+  <circle
+    cx="700"
+    cy="230"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.4"
+  />
+
+
+  <!-- Peripheral integrity nodes -->
+
+  <circle
+    cx="350"
+    cy="135"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.3"
+  />
+
+  <circle
+    cx="850"
+    cy="135"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.3"
+  />
+
+  <circle
+    cx="350"
+    cy="315"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.25"
+  />
+
+  <circle
+    cx="850"
+    cy="315"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.25"
+  />
+
+
+  <!-- Integrity connections -->
+
+  <path
+    d="M350 135L430 180"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+  <path
+    d="M850 135L770 180"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+  <path
+    d="M350 315L430 280"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+  <path
+    d="M850 315L770 280"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+</svg>

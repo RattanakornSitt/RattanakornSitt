@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Cloud Infrastructure
+
+Version
+4.0
+
+Purpose
+Reusable cloud infrastructure geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="440"
+  viewBox="0 0 1200 440"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="cloudGradient"
+      x1="200"
+      y1="80"
+      x2="1000"
+      y2="360"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.04"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.16"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.04"
+      />
+    </linearGradient>
+
+
+    <linearGradient
+      id="cloudLine"
+      x1="180"
+      y1="220"
+      x2="1020"
+      y2="220"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.55"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+    </linearGradient>
+
+
+    <filter id="cloudGlow">
+      <feGaussianBlur
+        stdDeviation="8"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Infrastructure boundary -->
+
+  <rect
+    x="180"
+    y="70"
+    width="840"
+    height="300"
+    rx="24"
+    fill="url(#cloudGradient)"
+    stroke="#FFFFFF"
+    stroke-opacity="0.12"
+  />
+
+
+  <!-- Cloud silhouette -->
+
+  <path
+    d="
+      M420 280
+      H760
+      C812 280 850 246 850 202
+      C850 158 814 124 770 124
+      C760 124 750 125 740 128
+      C716 88 674 64 626 64
+      C568 64 518 101 502 153
+      C488 146 472 142 456 142
+      C414 142 380 173 380 211
+      C380 250 398 280 420 280
+      Z
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.22"
+    stroke-width="2"
+  />
+
+
+  <!-- Cloud ambient glow -->
+
+  <path
+    d="
+      M420 280
+      H760
+      C812 280 850 246 850 202
+      C850 158 814 124 770 124
+      C760 124 750 125 740 128
+      C716 88 674 64 626 64
+      C568 64 518 101 502 153
+      C488 146 472 142 456 142
+      C414 142 380 173 380 211
+      C380 250 398 280 420 280
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+    stroke-width="14"
+    filter="url(#cloudGlow)"
+  />
+
+
+  <!-- Infrastructure spine -->
+
+  <path
+    d="M260 320H940"
+    stroke="url(#cloudLine)"
+    stroke-width="2"
+  />
+
+
+  <!-- Service connections -->
+
+  <path
+    d="M420 280V320"
+    stroke="#FFFFFF"
+    stroke-opacity="0.22"
+  />
+
+  <path
+    d="M600 280V320"
+    stroke="#FFFFFF"
+    stroke-opacity="0.35"
+  />
+
+  <path
+    d="M780 280V320"
+    stroke="#FFFFFF"
+    stroke-opacity="0.22"
+  />
+
+
+  <!-- Service nodes -->
+
+  <circle
+    cx="420"
+    cy="320"
+    r="9"
+    fill="#FFFFFF"
+    opacity="0.7"
+  />
+
+  <circle
+    cx="600"
+    cy="320"
+    r="11"
+    fill="#FFFFFF"
+    opacity="0.9"
+  />
+
+  <circle
+    cx="780"
+    cy="320"
+    r="9"
+    fill="#FFFFFF"
+    opacity="0.7"
+  />
+
+
+  <!-- Core infrastructure node -->
+
+  <circle
+    cx="600"
+    cy="200"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.85"
+  />
+
+  <circle
+    cx="600"
+    cy="200"
+    r="30"
+    stroke="#FFFFFF"
+    stroke-opacity="0.12"
+  />
+
+
+  <!-- Peripheral infrastructure points -->
+
+  <circle
+    cx="270"
+    cy="120"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.3"
+  />
+
+  <circle
+    cx="930"
+    cy="120"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.3"
+  />
+
+  <circle
+    cx="270"
+    cy="350"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.25"
+  />
+
+  <circle
+    cx="930"
+    cy="350"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.25"
+  />
+
+</svg>

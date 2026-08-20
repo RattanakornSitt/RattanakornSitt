@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Analytics Dashboard
+
+Version
+4.0
+
+Purpose
+Reusable engineering analytics geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="500"
+  viewBox="0 0 1200 500"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="panelGradient"
+      x1="0"
+      y1="0"
+      x2="0"
+      y2="1"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.07"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.02"
+      />
+
+    </linearGradient>
+
+
+    <linearGradient
+      id="chartGradient"
+      x1="300"
+      y1="350"
+      x2="850"
+      y2="150"
+      gradientUnits="userSpaceOnUse"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.08"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.75"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.15"
+      />
+
+    </linearGradient>
+
+
+    <filter id="dashboardGlow">
+      <feGaussianBlur
+        stdDeviation="6"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Dashboard frame -->
+
+  <rect
+    x="120"
+    y="60"
+    width="960"
+    height="380"
+    rx="18"
+    fill="url(#panelGradient)"
+    stroke="#FFFFFF"
+    stroke-opacity="0.14"
+  />
+
+
+  <!-- Header -->
+
+  <line
+    x1="120"
+    y1="110"
+    x2="1080"
+    y2="110"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+
+  <!-- Header indicators -->
+
+  <circle
+    cx="165"
+    cy="85"
+    r="6"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="190"
+    cy="85"
+    r="6"
+    fill="#FFFFFF"
+    opacity="0.25"
+  />
+
+  <circle
+    cx="215"
+    cy="85"
+    r="6"
+    fill="#FFFFFF"
+    opacity="0.15"
+  />
+
+
+  <!-- Metric cards -->
+
+  <rect
+    x="160"
+    y="135"
+    width="180"
+    height="80"
+    rx="10"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+  <rect
+    x="360"
+    y="135"
+    width="180"
+    height="80"
+    rx="10"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+  <rect
+    x="560"
+    y="135"
+    width="180"
+    height="80"
+    rx="10"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+  <rect
+    x="760"
+    y="135"
+    width="180"
+    height="80"
+    rx="10"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+
+  <!-- Metric signals -->
+
+  <path
+    d="M185 180L210 172L230 180L250 160L275 166L300 150"
+    stroke="#FFFFFF"
+    stroke-opacity="0.55"
+    stroke-width="2"
+  />
+
+  <path
+    d="M385 182L410 180L430 165L450 170L475 150L510 158"
+    stroke="#FFFFFF"
+    stroke-opacity="0.4"
+    stroke-width="2"
+  />
+
+  <path
+    d="M585 175L610 180L635 160L660 168L685 145L710 152"
+    stroke="#FFFFFF"
+    stroke-opacity="0.5"
+    stroke-width="2"
+  />
+
+  <path
+    d="M785 182L810 170L835 175L860 155L885 160L910 145"
+    stroke="#FFFFFF"
+    stroke-opacity="0.6"
+    stroke-width="2"
+  />
+
+
+  <!-- Main chart -->
+
+  <rect
+    x="160"
+    y="245"
+    width="580"
+    height="155"
+    rx="10"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+
+  <!-- Chart grid -->
+
+  <path
+    d="M180 285H720"
+    stroke="#FFFFFF"
+    stroke-opacity="0.06"
+  />
+
+  <path
+    d="M180 325H720"
+    stroke="#FFFFFF"
+    stroke-opacity="0.06"
+  />
+
+  <path
+    d="M180 365H720"
+    stroke="#FFFFFF"
+    stroke-opacity="0.06"
+  />
+
+
+  <path
+    d="M280 265V385"
+    stroke="#FFFFFF"
+    stroke-opacity="0.05"
+  />
+
+  <path
+    d="M400 265V385"
+    stroke="#FFFFFF"
+    stroke-opacity="0.05"
+  />
+
+  <path
+    d="M520 265V385"
+    stroke="#FFFFFF"
+    stroke-opacity="0.05"
+  />
+
+  <path
+    d="M640 265V385"
+    stroke="#FFFFFF"
+    stroke-opacity="0.05"
+  />
+
+
+  <!-- Main analytics curve -->
+
+  <path
+    d="
+      M190 365
+      L270 350
+      L350 355
+      L430 315
+      L510 330
+      L590 285
+      L670 300
+      L720 270
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.12"
+    stroke-width="10"
+    filter="url(#dashboardGlow)"
+  />
+
+  <path
+    d="
+      M190 365
+      L270 350
+      L350 355
+      L430 315
+      L510 330
+      L590 285
+      L670 300
+      L720 270
+    "
+    stroke="url(#chartGradient)"
+    stroke-width="2"
+  />
+
+
+  <!-- Chart data points -->
+
+  <circle
+    cx="270"
+    cy="350"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.55"
+  />
+
+  <circle
+    cx="430"
+    cy="315"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.65"
+  />
+
+  <circle
+    cx="590"
+    cy="285"
+    r="6"
+    fill="#FFFFFF"
+    opacity="0.85"
+  />
+
+  <circle
+    cx="720"
+    cy="270"
+    r="7"
+    fill="#FFFFFF"
+    opacity="0.9"
+  />
+
+
+  <!-- Secondary analytics panel -->
+
+  <rect
+    x="760"
+    y="245"
+    width="180"
+    height="155"
+    rx="10"
+    stroke="#FFFFFF"
+    stroke-opacity="0.1"
+  />
+
+
+  <!-- Distribution bars -->
+
+  <rect
+    x="790"
+    y="345"
+    width="18"
+    height="30"
+    fill="#FFFFFF"
+    opacity="0.25"
+  />
+
+  <rect
+    x="820"
+    y="320"
+    width="18"
+    height="55"
+    fill="#FFFFFF"
+    opacity="0.4"
+  />
+
+  <rect
+    x="850"
+    y="295"
+    width="18"
+    height="80"
+    fill="#FFFFFF"
+    opacity="0.55"
+  />
+
+  <rect
+    x="880"
+    y="275"
+    width="18"
+    height="100"
+    fill="#FFFFFF"
+    opacity="0.7"
+  />
+
+
+  <!-- Analytics core -->
+
+  <circle
+    cx="930"
+    cy="270"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+</svg>

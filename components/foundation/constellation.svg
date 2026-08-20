@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Constellation Map
+
+Version
+4.0
+
+Purpose
+Reusable engineering relationship geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="520"
+  viewBox="0 0 1200 520"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="linkGradient"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.45"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+    </linearGradient>
+
+
+    <filter id="starGlow">
+      <feGaussianBlur
+        stdDeviation="6"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Connection network -->
+
+  <path
+    d="M600 260L300 120"
+    stroke="url(#linkGradient)"
+    stroke-width="1"
+  />
+
+  <path
+    d="M600 260L900 120"
+    stroke="url(#linkGradient)"
+    stroke-width="1"
+  />
+
+  <path
+    d="M600 260L240 380"
+    stroke="url(#linkGradient)"
+    stroke-width="1"
+  />
+
+  <path
+    d="M600 260L960 380"
+    stroke="url(#linkGradient)"
+    stroke-width="1"
+  />
+
+  <path
+    d="M300 120L900 120"
+    stroke="url(#linkGradient)"
+    stroke-width="1"
+    stroke-opacity="0.5"
+  />
+
+  <path
+    d="M240 380L960 380"
+    stroke="url(#linkGradient)"
+    stroke-width="1"
+    stroke-opacity="0.5"
+  />
+
+
+  <!-- Secondary connections -->
+
+  <path
+    d="M300 120L240 380"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M900 120L960 380"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+
+  <!-- Central star -->
+
+  <circle
+    cx="600"
+    cy="260"
+    r="34"
+    stroke="#FFFFFF"
+    stroke-opacity="0.15"
+  />
+
+  <circle
+    cx="600"
+    cy="260"
+    r="12"
+    fill="#FFFFFF"
+  />
+
+  <circle
+    cx="600"
+    cy="260"
+    r="50"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+    filter="url(#starGlow)"
+  />
+
+
+  <!-- Primary nodes -->
+
+  <circle
+    cx="300"
+    cy="120"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+  <circle
+    cx="900"
+    cy="120"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+  <circle
+    cx="240"
+    cy="380"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+  <circle
+    cx="960"
+    cy="380"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+
+  <!-- Satellite points -->
+
+  <circle
+    cx="450"
+    cy="180"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="750"
+    cy="180"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="450"
+    cy="340"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="750"
+    cy="340"
+    r="4"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+
+</svg>

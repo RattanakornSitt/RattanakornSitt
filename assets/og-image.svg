@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+====================================================================
+
+Polaris Design System
+
+Asset
+Open Graph Image
+
+Version
+1.0
+
+Purpose
+Social preview identity card.
+
+====================================================================
+-->
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="1200"
+height="630"
+viewBox="0 0 1200 630">
+
+
+<title>
+Rattanakorn Sittisang — Thoughtful Product Engineer
+</title>
+
+
+<desc>
+Open Graph image representing Project Polaris engineering identity.
+</desc>
+
+
+<!-- ========================================================== -->
+<!-- BACKGROUND                                                 -->
+<!-- ========================================================== -->
+
+
+<rect
+width="1200"
+height="630"
+fill="#0B1120"/>
+
+
+
+<!-- ========================================================== -->
+<!-- GRID                                                        -->
+<!-- ========================================================== -->
+
+
+<defs>
+
+<pattern
+id="og-grid"
+width="40"
+height="40"
+patternUnits="userSpaceOnUse">
+
+<path
+d="M40 0H0V40"
+fill="none"
+stroke="#334155"
+stroke-width="1"
+opacity="0.25"/>
+
+</pattern>
+
+</defs>
+
+
+<rect
+width="1200"
+height="630"
+fill="url(#og-grid)"/>
+
+
+
+<!-- ========================================================== -->
+<!-- CENTER SYMBOL                                               -->
+<!-- ========================================================== -->
+
+
+<g
+transform="translate(600 170)">
+
+
+<polygon
+points="
+0,-42
+36,-21
+36,21
+0,42
+-36,21
+-36,-21"
+fill="none"
+stroke="#60A5FA"
+stroke-width="4"/>
+
+
+<circle
+cx="0"
+cy="0"
+r="8"
+fill="#60A5FA"/>
+
+
+</g>
+
+
+
+<!-- ========================================================== -->
+<!-- BRAND                                                        -->
+<!-- ========================================================== -->
+
+
+<text
+x="600"
+y="300"
+text-anchor="middle"
+font-family="IBM Plex Sans, Arial, sans-serif"
+font-size="72"
+font-weight="700"
+fill="#F8FAFC">
+
+RATTANAKORN SITTISANG
+
+</text>
+
+
+
+<text
+x="600"
+y="360"
+text-anchor="middle"
+font-family="IBM Plex Sans, Arial, sans-serif"
+font-size="32"
+fill="#60A5FA">
+
+Thoughtful Product Engineer
+
+</text>
+
+
+
+<!-- ========================================================== -->
+<!-- DESCRIPTION                                                 -->
+<!-- ========================================================== -->
+
+
+<text
+x="600"
+y="430"
+text-anchor="middle"
+font-family="IBM Plex Sans, Arial, sans-serif"
+font-size="24"
+fill="#CBD5E1">
+
+Systems • Data • AI • Product Engineering
+
+</text>
+
+
+
+<!-- ========================================================== -->
+<!-- PROJECT                                                      -->
+<!-- ========================================================== -->
+
+
+<line
+x1="350"
+y1="490"
+x2="850"
+y2="490"
+stroke="#334155"
+stroke-width="2"/>
+
+
+
+<text
+x="600"
+y="540"
+text-anchor="middle"
+font-family="IBM Plex Mono, monospace"
+font-size="20"
+fill="#94A3B8">
+
+PROJECT POLARIS / DESIGN SYSTEM
+
+</text>
+
+
+
+</svg>

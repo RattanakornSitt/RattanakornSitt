@@ -1,172 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
-──────────────────────────────────────────────────────────────
+====================================================================
 
 Polaris Design System
 
-Foundation Grid System
+Component
+Engineering Grid Background
 
-Version 1.0
+Version
+4.0
 
-Designed & Engineered by Prae
+Purpose
+Reusable technical background geometry.
 
-This SVG defines the reusable engineering grid used
-across every illustration inside Polaris Design System.
+This file intentionally contains NO labels.
 
-The grid is intentionally subtle.
+Labels belong to markdown content.
 
-It exists to support information—not decoration.
-
-──────────────────────────────────────────────────────────────
+====================================================================
 -->
 
 <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1280"
-    height="640"
-    viewBox="0 0 1280 640"
-    role="img"
-    aria-labelledby="title desc">
+  width="1200"
+  height="600"
+  viewBox="0 0 1200 600"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
 
-<title>
-Polaris Design System — Foundation Grid
-</title>
-
-<desc>
-Reusable engineering grid based on an eight point spacing
-system for GitHub profile graphics.
-</desc>
-
-<defs>
-
-    <!-- ================================================== -->
-    <!-- COLORS                                             -->
-    <!-- ================================================== -->
-
-    <style>
-
-        .background{
-            fill:#FAFAF9;
-        }
-
-        .major-grid{
-            stroke:#CBD5E1;
-            stroke-width:1;
-            opacity:.55;
-        }
-
-        .minor-grid{
-            stroke:#E5E7EB;
-            stroke-width:.5;
-            opacity:.35;
-        }
-
-        .margin{
-            stroke:#2563EB;
-            stroke-width:1.5;
-            stroke-dasharray:8 8;
-            opacity:.7;
-        }
-
-    </style>
-
-    <!-- ================================================== -->
-    <!-- 8px GRID                                           -->
-    <!-- ================================================== -->
+  <defs>
 
     <pattern
-        id="minorGrid"
-        width="8"
-        height="8"
-        patternUnits="userSpaceOnUse">
-
-        <path
-            d="M 8 0 L 0 0 0 8"
-            class="minor-grid"/>
-
+      id="grid"
+      width="40"
+      height="40"
+      patternUnits="userSpaceOnUse"
+    >
+      <path
+        d="M40 0H0V40"
+        stroke="#FFFFFF"
+        stroke-opacity="0.08"
+        stroke-width="1"
+      />
     </pattern>
 
-    <!-- ================================================== -->
-    <!-- 64px GRID                                          -->
-    <!-- ================================================== -->
 
-    <pattern
-        id="majorGrid"
-        width="64"
-        height="64"
-        patternUnits="userSpaceOnUse">
+    <radialGradient
+      id="fade"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(600 300) rotate(90) scale(350 700)"
+    >
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.12"
+      />
 
-        <rect
-            width="64"
-            height="64"
-            fill="url(#minorGrid)"/>
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0"
+      />
+    </radialGradient>
 
-        <path
-            d="M 64 0 L 0 0 0 64"
-            class="major-grid"/>
+  </defs>
 
-    </pattern>
 
-</defs>
+  <!-- Engineering grid -->
+  <rect
+    width="1200"
+    height="600"
+    fill="url(#grid)"
+  />
 
-<!-- ====================================================== -->
-<!-- CANVAS                                                 -->
-<!-- ====================================================== -->
 
-<rect
-    width="1280"
-    height="640"
-    class="background"/>
+  <!-- Soft system field -->
+  <rect
+    width="1200"
+    height="600"
+    fill="url(#fade)"
+  />
 
-<rect
-    width="1280"
-    height="640"
-    fill="url(#majorGrid)"/>
 
-<!-- ====================================================== -->
-<!-- SAFE MARGIN                                            -->
-<!-- ====================================================== -->
+  <!-- Reference nodes -->
 
-<rect
-    x="80"
-    y="80"
-    width="1120"
-    height="480"
-    fill="none"
-    class="margin"/>
+  <circle
+    cx="120"
+    cy="120"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
 
-<!-- ====================================================== -->
-<!-- CENTER GUIDE                                           -->
-<!-- ====================================================== -->
+  <circle
+    cx="1080"
+    cy="480"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
 
-<line
-    x1="640"
-    y1="0"
-    x2="640"
-    y2="640"
-    class="major-grid"/>
-
-<line
-    x1="0"
-    y1="320"
-    x2="1280"
-    y2="320"
-    class="major-grid"/>
-
-<!-- ====================================================== -->
-<!-- LABEL                                                  -->
-<!-- ====================================================== -->
-
-<text
-    x="96"
-    y="48"
-    font-family="IBM Plex Mono"
-    font-size="12"
-    fill="#64748B">
-
-Polaris Design System — Foundation Grid
-
-</text>
 
 </svg>

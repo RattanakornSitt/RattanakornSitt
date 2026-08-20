@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Node Map
+
+Version
+4.0
+
+Purpose
+Reusable engineering network geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="420"
+  viewBox="0 0 1200 420"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="connection"
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="1"
+    >
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.08"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.5"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.08"
+      />
+
+    </linearGradient>
+
+
+    <filter id="nodeGlow">
+      <feGaussianBlur
+        stdDeviation="5"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Connections -->
+
+  <path
+    d="M600 210L350 90"
+    stroke="url(#connection)"
+    stroke-width="1"
+  />
+
+  <path
+    d="M600 210L850 90"
+    stroke="url(#connection)"
+    stroke-width="1"
+  />
+
+  <path
+    d="M600 210L250 330"
+    stroke="url(#connection)"
+    stroke-width="1"
+  />
+
+  <path
+    d="M600 210L950 330"
+    stroke="url(#connection)"
+    stroke-width="1"
+  />
+
+
+  <path
+    d="M350 90L850 90"
+    stroke="url(#connection)"
+    stroke-width="1"
+    stroke-opacity="0.5"
+  />
+
+  <path
+    d="M250 330L950 330"
+    stroke="url(#connection)"
+    stroke-width="1"
+    stroke-opacity="0.5"
+  />
+
+
+  <!-- Central system core -->
+
+  <circle
+    cx="600"
+    cy="210"
+    r="28"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+  />
+
+  <circle
+    cx="600"
+    cy="210"
+    r="12"
+    fill="#FFFFFF"
+  />
+
+  <circle
+    cx="600"
+    cy="210"
+    r="35"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+    filter="url(#nodeGlow)"
+  />
+
+
+  <!-- Peripheral nodes -->
+
+  <circle
+    cx="350"
+    cy="90"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+  <circle
+    cx="850"
+    cy="90"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+  <circle
+    cx="250"
+    cy="330"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+  <circle
+    cx="950"
+    cy="330"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+
+  <!-- Small satellite nodes -->
+
+  <circle
+    cx="470"
+    cy="150"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="730"
+    cy="150"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="470"
+    cy="270"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+  <circle
+    cx="730"
+    cy="270"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.45"
+  />
+
+
+</svg>

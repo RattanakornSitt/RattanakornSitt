@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Deployment Flow
+
+Version
+4.0
+
+Purpose
+Reusable CI/CD and deployment geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="420"
+  viewBox="0 0 1200 420"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="deployGradient"
+      x1="160"
+      y1="210"
+      x2="1040"
+      y2="210"
+      gradientUnits="userSpaceOnUse"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+      <stop
+        offset="0.5"
+        stop-color="#FFFFFF"
+        stop-opacity="0.55"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+    </linearGradient>
+
+
+    <filter id="deployGlow">
+      <feGaussianBlur
+        stdDeviation="7"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Deployment path glow -->
+
+  <path
+    d="
+      M160 210
+      H1040
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.12"
+    stroke-width="10"
+    filter="url(#deployGlow)"
+  />
+
+
+  <!-- Main deployment path -->
+
+  <path
+    d="
+      M160 210
+      H1040
+    "
+    stroke="url(#deployGradient)"
+    stroke-width="2"
+  />
+
+
+  <!-- Stage connections -->
+
+  <path
+    d="M300 210V130"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+  <path
+    d="M520 210V290"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+  <path
+    d="M740 210V130"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+  <path
+    d="M900 210V290"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+
+  <!-- Main stages -->
+
+  <circle
+    cx="300"
+    cy="210"
+    r="24"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+  <circle
+    cx="520"
+    cy="210"
+    r="24"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+  <circle
+    cx="740"
+    cy="210"
+    r="24"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+  <circle
+    cx="900"
+    cy="210"
+    r="24"
+    stroke="#FFFFFF"
+    stroke-opacity="0.2"
+  />
+
+
+  <!-- Stage cores -->
+
+  <circle
+    cx="300"
+    cy="210"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+  <circle
+    cx="520"
+    cy="210"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+  <circle
+    cx="740"
+    cy="210"
+    r="10"
+    fill="#FFFFFF"
+    opacity="0.95"
+  />
+
+  <circle
+    cx="900"
+    cy="210"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+
+  <!-- Build artifact -->
+
+  <rect
+    x="276"
+    y="106"
+    width="48"
+    height="48"
+    rx="8"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+  />
+
+  <path
+    d="M288 130H312"
+    stroke="#FFFFFF"
+    stroke-opacity="0.55"
+    stroke-width="2"
+  />
+
+
+  <!-- Test signal -->
+
+  <circle
+    cx="520"
+    cy="290"
+    r="24"
+    stroke="#FFFFFF"
+    stroke-opacity="0.15"
+  />
+
+  <path
+    d="
+      M505 290
+      L516 301
+      L536 277
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.65"
+    stroke-width="2"
+  />
+
+
+  <!-- Release signal -->
+
+  <path
+    d="
+      M728 130
+      L740 118
+      L752 130
+      L740 142
+      Z
+    "
+    stroke="#FFFFFF"
+    stroke-opacity="0.45"
+  />
+
+
+  <!-- Runtime node -->
+
+  <rect
+    x="876"
+    y="266"
+    width="48"
+    height="48"
+    rx="10"
+    stroke="#FFFFFF"
+    stroke-opacity="0.18"
+  />
+
+  <circle
+    cx="900"
+    cy="290"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.65"
+  />
+
+
+  <!-- Active deployment ring -->
+
+  <circle
+    cx="740"
+    cy="210"
+    r="42"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+    filter="url(#deployGlow)"
+  />
+
+
+  <!-- Endpoints -->
+
+  <circle
+    cx="160"
+    cy="210"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+  <circle
+    cx="1040"
+    cy="210"
+    r="5"
+    fill="#FFFFFF"
+    opacity="0.35"
+  />
+
+</svg>

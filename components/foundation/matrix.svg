@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+====================================================================
+
+Polaris Design System
+
+Component
+Engineering Matrix
+
+Version
+4.0
+
+Purpose
+Reusable analytical grid geometry.
+
+This file intentionally contains NO labels.
+
+Labels belong to markdown content.
+
+====================================================================
+-->
+
+<svg
+  width="1200"
+  height="420"
+  viewBox="0 0 1200 420"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <defs>
+
+    <linearGradient
+      id="matrixFade"
+      x1="0"
+      y1="0"
+      x2="0"
+      y2="1"
+    >
+
+      <stop
+        stop-color="#FFFFFF"
+        stop-opacity="0.35"
+      />
+
+      <stop
+        offset="1"
+        stop-color="#FFFFFF"
+        stop-opacity="0.05"
+      />
+
+    </linearGradient>
+
+
+    <filter id="matrixGlow">
+      <feGaussianBlur
+        stdDeviation="4"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- Matrix frame -->
+
+  <rect
+    x="160"
+    y="60"
+    width="880"
+    height="300"
+    rx="12"
+    stroke="#FFFFFF"
+    stroke-opacity="0.12"
+  />
+
+
+  <!-- Vertical columns -->
+
+  <path
+    d="M280 60V360"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M400 60V360"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M520 60V360"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M640 60V360"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M760 60V360"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M880 60V360"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+
+
+  <!-- Horizontal rows -->
+
+  <path
+    d="M160 120H1040"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M160 180H1040"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M160 240H1040"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+  <path
+    d="M160 300H1040"
+    stroke="#FFFFFF"
+    stroke-opacity="0.08"
+  />
+
+
+  <!-- Data points -->
+
+  <circle
+    cx="280"
+    cy="120"
+    r="6"
+    fill="#FFFFFF"
+    opacity="0.8"
+  />
+
+  <circle
+    cx="520"
+    cy="180"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.9"
+  />
+
+  <circle
+    cx="760"
+    cy="240"
+    r="6"
+    fill="#FFFFFF"
+    opacity="0.75"
+  />
+
+  <circle
+    cx="880"
+    cy="300"
+    r="8"
+    fill="#FFFFFF"
+    opacity="0.9"
+  />
+
+
+  <!-- Highlight region -->
+
+  <rect
+    x="490"
+    y="150"
+    width="60"
+    height="60"
+    fill="url(#matrixFade)"
+    filter="url(#matrixGlow)"
+  />
+
+
+  <!-- Coordinate nodes -->
+
+  <circle
+    cx="160"
+    cy="60"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.4"
+  />
+
+  <circle
+    cx="1040"
+    cy="360"
+    r="3"
+    fill="#FFFFFF"
+    opacity="0.4"
+  />
+
+
+</svg>
